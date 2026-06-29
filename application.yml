@@ -1,5 +1,4 @@
 spring:
-
   datasource:
     url: jdbc:postgresql://localhost:5432/async_data_platform
     username: postgres
@@ -23,11 +22,16 @@ spring:
       host: localhost
       port: 6379
 
+jwt:
+  secret: mysecretkeymysecretkeymysecretkey123456
+  expiration: 86400000
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html

@@ -1,11 +1,9 @@
-
-
 package com.janak.dataplatform.common.exception;
 
-public class ResourceNotFoundException
+public class DuplicateResourceException
         extends RuntimeException {
 
-    public ResourceNotFoundException(
+    public DuplicateResourceException(
             String message
     ) {
         super(message);
